@@ -18,10 +18,27 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.svg-icons{
+  width: 15px;
+  color: gray;
+  display: inline-block !important;
+}
+
+.label{
+  border: 0.0625rem solid grey;
+    border-radius: 2em;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 0 7px;
+    white-space: nowrap;
+}
+
+.svg-tech-icon{
+  width: 15px;
+  color: goldenrod;
+  display: inline-block !important;
 }
