@@ -112,7 +112,7 @@ const RepoList = ({
                       icon={faCodePullRequest}
                       className="svg-icons mr-2"
                     />
-                    <span>234 (dummy)</span>
+                    <span>234 (Dummy)</span>
                   </div>
                   <div className="w-auto mr-3">
                     Updated {diffDate(item.pushed_at)} ago
