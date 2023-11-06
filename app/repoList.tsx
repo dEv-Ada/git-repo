@@ -20,7 +20,7 @@ const RepoList = ({
   total,
   searchRepo,
 }: any) => {
-  const diffDate = (d1: any) => {
+  const diffDate = (d1: string) => {
     const a = new Date(d1);
     const b = new Date();
     const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
@@ -42,13 +42,13 @@ const RepoList = ({
   return (
     <>
       <div className="flex flex-col container mx-auto mt-2">
-        <h3 className="w-full">
+        <h3 className="w-full mb-4">
           {" "}
           <FontAwesomeIcon icon={faBookBookmark} className="svg-icons mr-3" />
           Repositories
         </h3>
         <SearchBox searchRepo={searchRepo} />
-        <div className="border border-gray-200 w-full">
+        <div className="border border-gray-200 w-full mb-3">
           {filterRepo?.length > 0 &&
             filterRepo?.map((item: RepoListModel) => (
               <div key={item.id} className="w-full border border-gray-200 p-3">
@@ -105,7 +105,7 @@ const RepoList = ({
                       icon={faCircleDot}
                       className="svg-icons mr-2"
                     />
-                    <span>500 (dummy)</span>
+                    <span>500 (Dummy)</span>
                   </div>
                   <div className="w-auto mr-3">
                     <FontAwesomeIcon

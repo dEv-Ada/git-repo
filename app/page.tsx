@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { RepoListModel } from "./model/datModel";
 import RepoList from "./repoList";
 
-export default function Home() {
+const Home = () => {
   const [allRepo, setAllRepo] = useState<RepoListModel[]>([]);
   const [filterRepo, setFilterRepo] = useState<RepoListModel[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -76,4 +76,6 @@ export default function Home() {
       )}
     </main>
   );
-}
+};
+
+export default Home;

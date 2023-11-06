@@ -25,7 +25,7 @@ const SearchBox = ({ searchRepo }: any) => {
     debounceSearch(val);
   };
   return (
-    <div className="-mx-3 mb-6 relative w-full">
+    <div className="-mx-3 mb-0 relative w-full">
       <div className="w-1/2 px-3">
         <FontAwesomeIcon
           icon={faMagnifyingGlass}
